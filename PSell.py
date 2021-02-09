@@ -16,9 +16,9 @@ url="https://storage.googleapis.com/psel-2021/soleng%26backoffice/Psel2021.xml" 
 header = { 'Accept': 'application/xml' } #Estou mostrando que vai ser um arquivo do tipo .xml
 r = requests.get(url, headers=header) #Estou puxando os dados para minha máquina
  
-tree =  ET.ElementTree(ET.fromstring(r.content)) #Não entendi muito bem, mas parece que estou transformando o conteúdo de r em string
+tree =  ET.ElementTree(ET.fromstring(r.content)) #Estou transformando o conteúdo de r em string
 
-root = tree.getroot() #É sobre a hierarquia
+root = tree.getroot() 
 
 #Para manipular os dados, coloquei eles em um dicionário com o algoritmo abaixo, cada chave contém todos os dados de um empregado
 
