@@ -98,7 +98,7 @@ Liste a quantidade de funcionários que há em cada cargo, ordenando os cargos e
 """
 
 analistas = [] #Essa lista vai guardar os dados dos analistas
-coordenadores = [] #Essa lista vai guardar os dados dos acoordenadores
+coordenadores = [] #Essa lista vai guardar os dados dos coordenadores
 diretores = [] #Essa lista vai guardar os dados dos diretores
 gerentes = [] #Essa lista vai guardar os dados dos gerentes
 
@@ -397,6 +397,7 @@ r2 = requests.post(api_url, data=json.dumps(dados),  headers=header2)
 
 print(r2.status_code) #Verifiquei se a requisição foi bem-sucedida, cod. 200
 
+z = input('\nAperte qualquer tecla para sair')
 
 
 
